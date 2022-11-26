@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
+// import A from '../src/context/A'
+// import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import DisneyMain from './Disney clone/DisneyMain';
+// import Main from './Simpleweb/Main';
+// import MainNote from './Notesapp/MainNote';
+// import Accordtion from './Accordtion/Accordtion';
+// const FirstName = createContext();
+// import { FirstName } from './context/Contextapi';
+// import Report from './Covid/Report';
+// import Main from './Router-Dom/Main';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <DisneyMain/>
+    </>
   );
 }
 

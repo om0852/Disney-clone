@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition-delay: ease 0.2s;
+}
+
+:root {
+    --BRAND_BLUE: #1f80e0;
+    --BRAND_RED: #f15151;
+    --BRAND_ORANGE: #db882a;
+    --BG_GRADIENT_L0: linear-gradient(to bottom, #141b29, #0c111b 300px);
+    --BG_GRADIENT_L1: linear-gradient(to bottom, #192133, #111826);
+    --BG_GRADIENT_L2: linear-gradient(to bottom, #334366, #334366, #1c2940);
+    --CARD_GRADIENT: #030b17;
+    --HEADER_COLOR: #121926;
+    --BG_COLOR_L0: #0c111b;
+    --BG_COLOR_L1: #192133;
+    --BG_COLOR_L2: #334366;
+    --BG_COLOR_L3: rgba(144, 153, 153, 0.1);
+    --BG_COLOR_L4: #1b1f20;
+    --BORDER_COLOR_L0: #2e3333;
+    --TEXT_COLOR_L0: #fff;
+    --TEXT_COLOR_L1: rgba(255, 255, 255, 0.8);
+    --TEXT_COLOR_L2: rgba(255, 255, 255, 0.6);
+    --TEXT_COLOR_L3: #dadada;
+    --TEXT_COLOR_L4: #909999;
+    --TEXT_COLOR_L5: #f9f9f9;
+    --TEXT_LINK_COLOR: #1f80e0;
+    --TEXT_BTN_COLOR: #1f80e0;
+}
+
+.main {
+    width: 100%;
+    font-family: roboto;
+    background-color: #121926;
+    height:260vh;
+}
+
+.main-header,
+.header {
+    width: 100%;
+    background-color: #121926;
+    position: fixed;
+    z-index: 10000;
+    height: 15vh;
+    /* background-color: red; */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.left-header {
+    width: 40%;
+    position: relative;
+    left: 9vh;
+    display: flex;
+    /* top: 1.5vh; */
+    /* margin:2vh 4vh; */
+    /* background-color: green; */
+    height: 12vh;
+}
+
+.sidebar-icon {
+    width: 6vh;
+    height: 4vh;
+    margin-right: 2vh;
+    margin-top: 1vh;
+    /* background-image: url("sidebar-icon.png"); */
+    background-size: cover;
+    position: relative;
+    top: 2vh;
+}
+
+.sidebar-icon-container {
+    position: absolute;
+    top: 10vh;
+    left: -4vh;
+    height: 7vh;
+    background-color: var(--BG_COLOR_L1);
+    overflow: hidden;
+    transition-delay: 0.3s;
+    -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.22);
+    -o-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.22);
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.22);
+    display: none;
+    /* animation: all 0.3s; */
+    justify-content: center;
+    /* visibility: hidden; */
+}
+
+.sidebar-icon-container ul {
+    list-style: none;
+    align-items: center;
+}
+
+.sidebar-icon-container ul li {
+    width: 2 0vh;
+    padding: 3vh;
+    margin: 2vh 0;
+    text-align: center;
+    color: white;
+    /* visibility: hidden; */
+    height: 5vh;
+}
+
+.sidebar-icon-container ul li:hover {
+    background-color: rgb(26, 26, 27);
+    color: white;
+}
+
+.sidebar-icon-container-overflow {
+    position: absolute;
+    top: 10vh;
+    left: 0vh;
+    height: 7vh;
+    /* visibility: hidden; */
+    background-color: var(--BG_COLOR_L1);
+    /* overflow: hidden; */
+    transition-delay: 0.3s;
+    -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.22);
+    -o-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.22);
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.22);
+    /* display:none; */
+    /* animation: all 0.3s; */
+    justify-content: center;
+    z-index: 10;
+    display: table;
+}
+
+.logo {
+    /* background-image: url("Disney+_Hotstar_logo.png"); */
+    background-size: cover;
+    width: 19vh;
+    height: 10vh;
+    color: white;
+    position: relative;
+    top: -2vh;
+}
+
+.header-links {
+    width: 15vh;
+    height: 100%;
+    position: relative;
+    left: 2vh;
+    display: flex;
+    /* justify-content: center; */
+}
+
+.header-links ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.header-links ul li {
+    margin: 0vh 2vh;
+    text-transform: capitalize;
+}
+
+.header-links ul li a {
+    text-decoration: none;
+    color: rgb(159, 155, 155);
+    font-size: 1.2em;
+}
+
+.header-link ul li:hover {
+    color: rgb(202, 18, 18);
+    font-weight: 400;
+}
+
+.right-header {
+    text-align: right;
+    align-items: center;
+    /* display: inline-block; */
+    width: 100%;
+    height: 12vh;
+    /* align-items: center; */
+}
+
+.search {
+    width: 40vh;
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin-top: 5vh;
+    text-align: left;
+    transition: all 1s;
+    outline: none;
+    font-size: 1.1em;
+    margin-right: 3vh;
+    border-bottom: 2px solid white;
+}
+
+.search:hover {
+    width: 70vh;
+}
+
+
+.subcription,
+.login {
+    background: #1f80e0;
+    width: 15vh;
+    height: 5vh;
+    border-width: 0;
+    border-radius: 1vh;
+    margin-right: 1vh;
+    padding: 1vh;
+}
+.subcription {
+    color:white;
+    width: 15vh;
+}
+
+.login {
+    background-color: transparent;
+    color: white;
+    font-size: 1.3em;
+    border-width: 0;
+}
+
+.sublink-container,
+.sublink-container0,
+.sublink-container1 {
+    position: absolute;
+    width: 19vh;
+    height: 0vh;
+    top: 10vh;
+    left: 20vh;
+    border-radius: 4px;
+    background-color: var(--BG_COLOR_L1);   
+    overflow: hidden;
+    -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.22);
+    -o-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.22);
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.22);
+    /* animation: all 0.3s; */
+    transition-delay: 0.3s;
+}
+
+.dropdown-link {
+    /* text-align: center; */
+    justify-content: center;
+    outline: 0;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    /* margin: 2vh 2vh; */
+    width: 100%;
+    padding: 1vh;
+    height: 6vh;
+    display: inline-flex;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.dropdown-link:hover {
+    background-color: rgb(26, 26, 27);
+    color: white;
+}
+
+.sublink-container0 {
+    left: -5vh;
+    /* height: 60vh; */
+}
+
+.sublink-container0 a {
+    font-size: 0.9em;
+}
+
+.sublink-container-hover {
+    height: 74vh;
+}
+
+.sublink-container1 {
+    left: 7vh;
+}
+/* react css */
+#disneylogo {
+    width: 20vh;
+    position: relative;
+    /* top: -5vh; */
+}
+
+#sidebarlogo {
+    width: 8vh;
+}
+.main-slider{
+    width: 100%;
+    height: 80vh;
+    /* background-color: red; */
+}
+.main{
+   
+}
+.slider-container{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    /* background-color: green; */
+    /* display: flex; */
+    overflow: hidden;
+}
+.slider-flex{
+    display: flex;
+    width: 250%;
+    /* background-color: yellow; */
+    height: 100%;
+    transition-delay: 2s;
+    /* transform: translateX(-110px); */
+}
+.img-slider img{
+    height: 100vh;
+}
+.img-slider{
+    background-color:blue;
+    width: 250%;
+    height: 100%;
+}
+.movie-list-container{
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(26, 26, 27);
+}
+.mt-5{
+    margin-top: 5vh;
+    height: 45vh;
+    width: 100%;
+}
+.movie-list-container{
+    width: 100%;
+    margin: 5vh 0;
+    /* background-color: red; */
+    overflow: hidden;
+}
+.movie-list-container h2{
+color: white;
+margin-left: 4vh;
+font-size: 1.3em;
+}
+.movie-center-list{
+    width: 30vh;
+    height: 30vh;
+    margin: 1vh 4vh;
+    /* background-color: green; */
+}
+.movie-list{
+    display: -webkit-box;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    width: 100%;
+}
+.movie-center-list img{
+width: 100%;
+height: 100%;
+}
+
+.movie-center-list:hover{
+transform: scale(1.3);
+        background: linear-gradient(to right, var(--CARD_GRADIENT)60%, rgba(0,0,0,0));
+}
+.css-i4bv87-MuiSvgIcon-root{
+    color: white;
+    position: relative;
+    left: -5vh;
+}
+.serach-container{
+    position: relative;
+    top: 25vh;
+}
+.serach-container h2{
+    color: white;
+}
