@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Disney-clone/static/css/main.1458299e.css",
+    "main.js": "/Disney-clone/static/js/main.ae603f4b.js",
+    "static/js/787.ec78c698.chunk.js": "/Disney-clone/static/js/787.ec78c698.chunk.js",
+    "static/media/Disney+_Hotstar_logo.png": "/Disney-clone/static/media/Disney+_Hotstar_logo.6ddab5971b5c674f5616.png",
+    "index.html": "/Disney-clone/index.html",
+    "main.1458299e.css.map": "/Disney-clone/static/css/main.1458299e.css.map",
+    "main.ae603f4b.js.map": "/Disney-clone/static/js/main.ae603f4b.js.map",
+    "787.ec78c698.chunk.js.map": "/Disney-clone/static/js/787.ec78c698.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1458299e.css",
+    "static/js/main.ae603f4b.js"
+  ]
+}
